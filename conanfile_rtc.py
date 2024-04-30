@@ -23,4 +23,3 @@ class VkBootstrapConan(ConanFile):
         # libraries
         output = "output/" + str(self.settings.platform_architecture_target) + "/staticlib"
         self.copy("*" + self.name + "*", src=base + "../../" + output, dst=output)
-        
